@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Which Side Should We Scale? Revisiting Parameter Balance in Vision-Language Models</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    .authors {
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+    .affiliation {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 1.5em 0;
+      flex-wrap: wrap;
+    }
+    .button {
+      border: none;
+      background: black;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+    .section {
+      margin-top: 3em;
+    }
+    .acknowledgements {
+      margin-top: 3em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Which Side Should We Scale? Revisiting Parameter Balance in Vision-Language Models</h1>
+
+  <div class="authors">
+    Hepeng Fan, Yanyang Gong, Qingcheng Wang
+  </div>
+  <div class="affiliation">
+    ETH Zurich
+  </div>
+
+  <div class="buttons">
+    <a href="#" class="button">📄 Paper</a>
+    <a href="https://github.com/YanYang-G0001/CSNLP_PROJECT" class="button">💻 Code</a>
+    <a href="#" class="button">🖼 Poster</a>
+  </div>
+
+  <div class="section">
+    <h2>Abstract</h2>
+    <p>
+      Dual-encoder architectures are key to achieving efficient image-text retrieval. This work investigates a core question within this framework: under a limited parameter budget, which modality, vision or language, should be preferentially scaled? We construct a dual-tower model composed of a pre-trained ViT and a text encoder built upon averaged token embeddings from GPT-2. By systematically testing combinations of encoders at different scales, our results show that the model's parameter balance is more critical to performance than the total parameter count. For instance, a balanced configuration with ~660M parameters outperforms two larger, imbalanced counterparts with ~760M and ~860M parameters. Furthermore, we observe that these two imbalanced models, skewed towards either vision or language, show no significant difference in performance. This further suggests that, in our simplified framework, a "balanced" strategy that avoids either modality becoming a bottleneck is a superior design principle to simply favoring one over the other. Our study provides valuable empirical guidance on parameter allocation for VLM design under resource constraints.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Results</h2>
+    <img src="evaluation_heatmap.png" style="width: 100%;" alt="Model architecture">
+    <img src="evaluation_recall_at_5_heatmap.png" style="width: 100%;" alt="Model architecture">
+  </div>
+
+  <div class="acknowledgements">
+    <h2>Acknowledgements</h2>
+    <p>
+      We would like to express our sincere gratitude to Yifan Hou for his patient guidance and continuous support throughout this project. His feedback during meetings and technical discussions was instrumental in shaping our work.
+    </p>
+    <p>
+      We also thank Prof. Mrinmaya Sachan for designing and teaching this excellent course, which gave us the opportunity to explore and build this project.
+    </p>
+  </div>
+</body>
+</html>
