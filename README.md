@@ -1,5 +1,17 @@
-# Which Side Should We Scale? Revisiting Parameter Balance in Vision-Language Models
+<div align="center">
+  <h1>Which Side Should We Scale? Revisiting Parameter Balance in Vision-Language Models</h1>
 
+  <a href="#"><img src="https://img.shields.io/badge/Paper-ComingSoon-lightgrey" alt="Paper PDF"></a>
+  <a href="https://github.com/YanYang-G0001/CSNLP_PROJECT"><img src="https://img.shields.io/badge/Code-GitHub-green" alt="GitHub Code"></a>
+  <a href="https://yanyang-g0001.github.io/CSNLP_PROJECT//"><img src="https://img.shields.io/badge/Project_Page-Live-blue" alt="Project Page"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Poster-GoogleSlides-orange" alt="Poster"></a>
+
+  <br><br>
+  <strong>Hepeng Fan Yanyang Gong Qingcheng Wang</strong><br>
+  <em>ETH Zurich</em>
+</div>
+
+---
 This repository contains the implementation and experiments for our research on parameter balance in dual-encoder vision-language models.
 
 ## Abstract
